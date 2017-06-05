@@ -99,9 +99,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .content-frame {
   margin: 50px 70px;
+  line-height: 150%;
 }
 
-@media (max-width: 599.9px) {
+@media (max-width: 600px) {
   .content-frame {
     margin: 16px;
   }
@@ -120,7 +121,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
   z-index: 2;
 }
 
@@ -130,5 +130,15 @@ h1, h2, h3, h4, h5, h6 {
   left: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
-  margin-top: 60px;
+  margin-top: 64px;
+}
+
+@media (max-width: 600px) {
+  .mat-sidenav-container {
+    margin-top: 56px;
+  }
+}
+
+a {
+  word-wrap: break-word;
 }

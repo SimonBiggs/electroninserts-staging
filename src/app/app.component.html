@@ -40,12 +40,12 @@
     <a md-button href="https://github.com/SimonBiggs/electronfactor-server/blob/master/README.md"><img class="toolbar-logo" src="/assets/img/github-circle-white-transparent.svg"> GITHUB</a>
 </md-toolbar>
 
-<md-sidenav-container>
+<md-sidenav-container #container>
 
   <md-sidenav #sidenav>
     <h2>Electron Insert Factors</h2>
     <md-nav-list>      
-      <a md-list-item routerLink="/home" routerLinkActive="active" href (click)="sidenav.close()">Home</a>
+      <a md-list-item routerLink="/home" routerLinkActive="active" href (click)="container.scrollTop=0; sidenav.close(); ">Home</a>
       <a md-list-item routerLink="/details" routerLinkActive="active" href (click)="sidenav.close()">Further details</a>
       <a md-list-item routerLink="/specifications" routerLinkActive="active" href (click)="sidenav.close()">Machine specifications</a>
       <a md-list-item routerLink="/dicom" routerLinkActive="active" href (click)="sidenav.close()">Dicom shape extraction</a>
@@ -56,6 +56,8 @@
     </md-nav-list>
   </md-sidenav>
   
-  <router-outlet></router-outlet>
+  <div class="content-frame">
+    <router-outlet></router-outlet>
+  </div>
 </md-sidenav-container>
 
