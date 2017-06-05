@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material'
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { MarkdownModule } from 'angular2-markdown';
+
 import { RoutingModule } from './app.routing'
 
 import { AppComponent } from './app.component';
@@ -38,7 +40,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HttpModule,
     RoutingModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,27 +1,35 @@
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--6-col-phone">
-    <h3 itemprop="name">Electron insert factor modelling</h3>
+<div class="content-frame">
+  <div>
+    <h1 itemprop="name">Electron insert factor modelling</h1>
 
-    <h4>Disclaimer and Copyright</h4>
+    <h2>Publication</h2>
+    <p>The paper detailing the algorithim and the samples for which it has been validated:</p>
     <p>
-    Electron insert factor empirical modelling<br>   
-    Copyright (C) 2015-2016  Simon Biggs<br>
-    <br>
+      S. Biggs, M. Sobolewski, R. Murry, J. Kenny, Spline modelling electron insert factors using routine measurements. Physica Medica (2015), <a href="http://dx.doi.org/10.1016/j.ejmp.2015.11.002">doi:10.1016/j.ejmp.2015.11.002</a>.
+    </p>
+
+    <h2>Disclaimer and Copyright</h2>
+    <p>
+    Electron insert factor empirical modelling. Copyright (C) 2015-2017  Simon Biggs.
+    </p>
+    <p>
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
-    License, or (at your option) any later version.<br><br>
-
+    License, or (at your option) any later version.
+    </p>
+    <p>
     This program is distributed in the hope that it will be useful,
     but <b>without any warranty</b>; without even the implied warranty of
     <b>merchantability</b> or <b>fitness for a particular purpose</b>.  See the
-    GNU Affero General Public License for more details.<br><br>
-
+    GNU Affero General Public License for more details.
+    </p>
+    <p>
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.
     </p>
 
-    <h4>Description</h4>
+    <h2>Description</h2>
     <p>
       This online web app is for the modelling of the electron insert factor. <b>It is not intended to be the sole basis upon which monitor units are adjusted.</b>
       This tool is helpful for two cases, to check for consistency amongst measurements allowing remeasurement when required, and to help a qualified medical physicst make an informed desicion on what the electron insert factor is.
@@ -41,21 +49,16 @@
       If you find bugs, have any suggestions, or simply wish to share your results from using this model please submit either an issue or a pull request to the <a href="https://github.com/SimonBiggs/electroninserts-webapp/issues">Github version control system</a> or <a href="mailto:mail@simonbiggs.net">send me an email</a>.
     </p>
 
-    <h4>Publication</h4>
-    <!--<h6>Original paper</h6>-->
-    <p>The paper detailing the algorithim and the samples for which it has been validated:</p>
-    <p>
-      S. Biggs, M. Sobolewski, R. Murry, J. Kenny, Spline modelling electron insert factors using routine measurements. Physica Medica (2015), <a href="http://dx.doi.org/10.1016/j.ejmp.2015.11.002">doi:10.1016/j.ejmp.2015.11.002</a>.
-    </p>
+
 
 
   
 
    
   </div>
-  <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--6-col-phone">      
+  <div>      
 
-  <h4>Web app structure</h4>
+  <h2>Web app structure</h2>
     <p>This web app is divided into six logical components all of which can be accessed from the navigation menu. These are outlined below:</p>
       <ul>
         <li>
@@ -99,7 +102,7 @@
         </li>
       </ul>
 
-    <h4>Demo Instructions</h4>
+    <h2>Demo Instructions</h2>
     <p>
       If you wish to simply demo this app these are the following steps you can take:
     </p>
@@ -129,7 +132,7 @@
     </ul>
 
 
-    <h4>Implementation instructions</h4>
+    <h2>Implementation instructions</h2>
     <p>
       To implement this web app in your centre you need to do the following:
     </p>
@@ -207,25 +210,6 @@
           further details component</a>.
       </li>
     </ul>
-
-    <!--<h4>Use instructions</h4>
-    <ul>
-      <li>
-        Export the patient plan to dicom and then read the insert coordinates from the dicom file using the
-        <a routerLink="/dicom" routerLinkActive="active">
-          dicom component.
-        </a>          
-      </li>
-      <li>
-        Press the "Parameterise Insert" button to determine the equivalent ellipse width and length
-      </li>
-      <li>
-        Press the "Predict Factor with Model" button to automatically change the machine configuration to that which matches your loaded insert
-      </li>
-      <li>
-        Hover your mouse over the relevant width and length within the model to predict your insert factor
-      </li>
-    </ul>-->
 
 
   </div>
