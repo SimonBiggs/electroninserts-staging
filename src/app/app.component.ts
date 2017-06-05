@@ -1,9 +1,4 @@
-import 'hammerjs';
-
 import { Component } from '@angular/core';
-import {MdSidenav, MdToolbar} from "@angular/material";
-
-import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +6,5 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'App Title';
 }
