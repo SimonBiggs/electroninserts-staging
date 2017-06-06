@@ -96,6 +96,7 @@
           <md-list-item>
             <md-input-container class="full-width">
               <input 
+                type="number"
                 mdInput placeholder="Energy (MeV)"
                 [(ngModel)]="newEnergy"
                 (input)="checkNewEnergyInput()">
@@ -104,6 +105,7 @@
           <md-list-item>
             <md-input-container class="full-width">
               <input 
+                type="number"
                 mdInput placeholder="(Optional) R50 (cm)"
                 [(ngModel)]="newR50">
             </md-input-container>
@@ -175,6 +177,7 @@
           <md-list-item>
             <md-input-container class="full-width">
               <input 
+                type="number"
                 mdInput placeholder="SSD (cm)"
                 [(ngModel)]="newSSD"
                 (input)="checkNewSSDInput()">
