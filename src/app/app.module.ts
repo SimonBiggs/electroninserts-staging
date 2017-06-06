@@ -19,6 +19,11 @@ import { CreateModelComponent } from './create-model/create-model.component';
 import { UseModelComponent } from './use-model/use-model.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+import { TitleService } from './title.service';
+import { DataPersistenceService } from './data-persistence.service';
+
+import { AreaLengthConversionService } from './area-length-conversion.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +45,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+    TitleService,
+    DataPersistenceService,
+    AreaLengthConversionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -30,22 +30,8 @@
        url(/assets/fonts/roboto/Roboto-Regular.ttf) format('truetype');
 }
 
-@font-face {
-  font-family: 'Roboto-Bold';
-  /* src: url(/assets/material-design-icons/MaterialIcons-Regular.eot); */ /* For IE6-8 */
-  src: local('Roboto-Bold'),
-       /*url(/assets/material-design-icons/MaterialIcons-Regular.woff2) format('woff2'),
-       url(/assets/material-design-icons/MaterialIcons-Regular.woff) format('woff'),*/
-       /*url(/assets/roboto-font/Roboto-Bold.otf) format('opentype'),*/
-       url(/assets/fonts/roboto/Roboto-Bold.ttf) format('truetype');
-}
-
 html {
  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-   font-family: Roboto-Bold, Roboto, "Helvetica Neue", sans-serif;; 
 }
 
 .material-icons {
@@ -141,4 +127,24 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   word-wrap: break-word;
+}
+
+
+.primary-header-container {
+  background: #009688;
+}
+
+.primary-header {
+  padding: 50px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+  font-size: 35px;
+}
+
+@media (max-width: 600px) {
+  .primary-header {
+    padding: 24px 35px;
+    font-size: 25px;
+  }
 }

@@ -1,4 +1,5 @@
-<h1>Electron insert factor modelling</h1>
+
+<h2>Version details</h2>
 <p>
   Tags: <span itemprop="applicationCategory">Medical physics, electron inserts, electron cutouts, Python, Angular2, Bokeh, spline modelling</span><br>
   Last update: <span itemprop="datePublished" content="2017-06-05">2017-06-05</span><br>
@@ -32,13 +33,15 @@
   The following commands will set up this web app to work on a fresh install of <a href="http://releases.ubuntu.com/16.04/">Ubuntu 16.04</a>:
 <div style="overflow: auto" id="locally">
   <pre><code class="bash">sudo apt install git wget
-git clone --recursive \
+git clone \
     https://github.com/SimonBiggs/electroninserts-webapp.git \
     --branch gh-pages
 cd electroninserts-webapp
 
+git clone https://github.com/SimonBiggs/electronfactor-server.git
+
 wget \
-    https://goo.gl/poeKlL \
+    https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \
     -O miniconda.sh
 chmod +x miniconda.sh
 ./miniconda.sh -p $HOME/miniconda
@@ -47,7 +50,7 @@ export PATH=$HOME/miniconda/bin:$PATH
 conda update conda
 conda env create \
     --name electroninserts python=3.5 \
-    --file ./server/electronfactor-server/conda-requirements.txt
+    --file ./electronfactor-server/conda-requirements.txt
 source activate electroninserts
 
 python run_webapp_locally.py</code></pre>
