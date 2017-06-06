@@ -30,7 +30,7 @@ export class SpecificationsComponent implements OnInit {
   constructor(
     private myTitleService: TitleService,
     private dataPersistenceService: DataPersistenceService,
-    private machineSpecificationService: MachineSpecificationService
+    public machineSpecificationService: MachineSpecificationService
   ) {}
 
 
