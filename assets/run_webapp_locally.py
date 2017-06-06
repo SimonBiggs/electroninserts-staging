@@ -10,7 +10,7 @@ def run_api_server():
     dir_path = os.path.dirname(os.path.realpath(__file__))
     call([
         "python", os.path.join(dir_path, 
-        'server', 'electronfactor-server', 'main.py')])
+        'electronfactor-server', 'main.py')])
 
 
 def run_http_server():
