@@ -96,7 +96,6 @@ export class SpecificationsComponent implements OnInit {
       throw new RangeError('The new energy set being added is not valid')
     }
     
-    console.log(this.newR50)
     let R50 = Number(this.newR50)
 
     if (this.newR50 === undefined || this.newR50 === null) {
