@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { MaterialModule } from '@angular/material'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { RoutingModule } from './app.routing'
@@ -21,8 +22,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 import { TitleService } from './title.service';
 import { DataPersistenceService } from './data-persistence.service';
-
-import { AreaLengthConversionService } from './area-length-conversion.service'
+import { MachineSpecificationService } from './machine-specification.service';
+import { CurrentSettingsService } from './current-settings.service';
+import { AreaLengthConversionService } from './area-length-conversion.service';
 
 @NgModule({
   declarations: [
@@ -43,12 +45,15 @@ import { AreaLengthConversionService } from './area-length-conversion.service'
     HttpModule,
     RoutingModule,
     MaterialModule,
+    BrowserAnimationsModule,
     FlexLayoutModule
   ],
   providers: [
     TitleService,
     DataPersistenceService,
-    AreaLengthConversionService
+    AreaLengthConversionService,
+    MachineSpecificationService,
+    CurrentSettingsService
   ],
   bootstrap: [AppComponent]
 })

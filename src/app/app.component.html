@@ -1,4 +1,4 @@
-<md-toolbar color="primary" class="mat-elevation-z8 fixed-toolbar">
+<md-toolbar color="primary" class="mat-elevation-z10 fixed-toolbar">
   <button md-icon-button (click)="sidenav.toggle()">
       <md-icon>menu</md-icon>
     </button>
@@ -53,10 +53,10 @@
       <a md-list-item routerLink="/home" routerLinkActive="active" href (click)="container.scrollTop=0; sidenav.close(); ">Home</a>
       <a md-list-item routerLink="/details" routerLinkActive="active" href (click)="sidenav.close()">Further details</a>
       <a md-list-item routerLink="/specifications" routerLinkActive="active" href (click)="sidenav.close()">Machine specifications</a>
-      <a md-list-item routerLink="/dicom" routerLinkActive="active" href (click)="sidenav.close()">Dicom shape extraction</a>
-      <a md-list-item routerLink="/parameterise" routerLinkActive="active" href (click)="sidenav.close()">Parameterise inserts</a>
-      <a md-list-item routerLink="/create-model" routerLinkActive="active" href (click)="sidenav.close()">Create electron model</a>
-      <a md-list-item routerLink="/use-model" routerLinkActive="active" href (click)="sidenav.close()">Use electron model</a>
+      <a md-list-item routerLink="/dicom" routerLinkActive="active" href (click)="sidenav.close()">DICOM insert shape extraction</a>
+      <a md-list-item routerLink="/parameterise" routerLinkActive="active" href (click)="sidenav.close()">Parameterise insert shapes</a>
+      <a md-list-item routerLink="/create-model" routerLinkActive="active" href (click)="sidenav.close()">Create insert factor model</a>
+      <a md-list-item routerLink="/use-model" routerLinkActive="active" href (click)="sidenav.close()">Use insert factor model</a>
       <a md-list-item routerLink="/database" routerLinkActive="active" href (click)="sidenav.close()">Database management</a>
     </md-nav-list>
   </md-sidenav>

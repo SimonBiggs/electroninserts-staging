@@ -88,19 +88,6 @@ html {
   line-height: 150%;
 }
 
-@media (max-width: 600px) {
-  .content-frame {
-    margin: 16px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .content-frame {
-    width: 960px;
-    margin: 50px auto;
-  }
-}
-
 .fixed-toolbar {
   overflow: hidden;
   position: fixed;
@@ -117,12 +104,6 @@ html {
   right: 0 !important;
   bottom: 0 !important;
   margin-top: 64px;
-}
-
-@media (max-width: 600px) {
-  .mat-sidenav-container {
-    margin-top: 56px;
-  }
 }
 
 a {
@@ -142,9 +123,33 @@ a {
   font-size: 35px;
 }
 
+.full-width {
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   .primary-header {
     padding: 24px 35px;
     font-size: 25px;
   }
+
+  .mat-sidenav-container {
+    margin-top: 56px;
+  }
+
+  .content-frame {
+    margin: 16px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .content-frame {
+    width: 960px;
+    margin: 50px auto;
+  }
+
+  /*.primary-header {
+    text-align: center;
+  }*/
+
 }
